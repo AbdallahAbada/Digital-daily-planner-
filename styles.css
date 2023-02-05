@@ -27,8 +27,9 @@ body {
 .head-para {
   background: #fff;
   color: rgba(1, 152, 185, 0.836);
-  padding: 3px;
-  min-width: 100px;
+  /* padding: 3px; */
+  width: 300px;
+  margin: 0 auto;
 }
 
 .head,
@@ -50,10 +51,11 @@ form button {
 
 .todo-input {
   outline: none;
+  width: 80%;
 }
 
 .todoForm {
-  margin: 0 30px;
+  /* margin: 0 30px; */
 }
 
 form button {
@@ -81,7 +83,6 @@ form button:hover {
 }
 
 .todo-item {
-  background: rgba(185, 1, 1, 0.836);
   color: #fff;
   list-style: none;
   padding: 5px 10px;
@@ -114,13 +115,27 @@ form button:hover {
   border: none;
   padding: 1rem;
   cursor: pointer;
-  font-size: 1rem;
+  font-size: 1.2rem;
   border: 1px solid;
 }
 
-.todo-item {
-  padding: 0rem 0.5rem;
+.complete-btn:hover {
+  background: rgba(1, 152, 185, 0.836);
+  color: #fff;
 }
+
+.trash-btn:hover {
+  background: rgba(1, 152, 185, 0.836);
+  color: #fff;
+}
+
+.complete-btn {
+  margin-left: 5px;
+}
+
+/* .todo-item {
+  padding: 0rem 0.5rem;
+} */
 
 .fa-trash,
 .fa-check {
@@ -132,10 +147,13 @@ form button:hover {
   justify-content: center;
   align-items: center;
   text-align: center;
+  margin: 0 auto;
   padding: 0.8rem;
-  font-size: 1.7rem;
+  font-size: 1.4rem;
   background: rgba(1, 152, 185, 0.836);
   color: #fff;
+  width: 90%;
+  height: 3.9rem;
 }
 
 .todo-dashboard {
@@ -143,6 +161,14 @@ form button:hover {
   justify-content: center;
   flex-wrap: wrap;
   margin-top: 20px;
+}
+
+.input-container {
+  width: 500px;
+}
+
+.finContain {
+  width: 500px;
 }
 
 .todo-item {
@@ -154,6 +180,8 @@ form button:hover {
   justify-content: space-between;
   align-items: center;
   transition: all 1s ease;
+  width: 70%;
+  margin: 8px auto;
 }
 
 .fin-li {
