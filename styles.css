@@ -1,0 +1,162 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Poppins", sans-serif;
+  min-height: 100vh;
+}
+
+.head {
+  height: 55vh;
+  background-image: linear-gradient(
+      to bottom,
+      rgba(1, 151, 185, 0.622),
+      rgba(0, 0, 0, 0.45)
+    ),
+    url(/pics/stylish-businessman-working-cafe.jpg);
+
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #fff;
+}
+
+.head-para {
+  background: #fff;
+  color: rgba(1, 152, 185, 0.836);
+  padding: 3px;
+  min-width: 100px;
+}
+
+.head,
+form,
+.head-para {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+form input,
+form button {
+  padding: 0.5rem;
+  font-size: 2rem;
+  border: none;
+  background: rgba(1, 152, 185, 0.836);
+  color: #fff;
+}
+
+.todo-input {
+  outline: none;
+}
+
+.todoForm {
+  margin: 0 30px;
+}
+
+form button {
+  background: rgba(1, 152, 185, 0.836);
+  color: #fff;
+
+  cursor: pointer;
+  transition: all 0.3s ease;
+}
+
+form button:hover {
+  color: rgba(1, 152, 185, 0.836);
+  background: #fff;
+}
+
+.todo {
+  margin: 0.5rem;
+  background: rgba(1, 152, 185, 0.836);
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.todo-item {
+  background: rgba(185, 1, 1, 0.836);
+  color: #fff;
+  list-style: none;
+  padding: 5px 10px;
+  margin: 5px;
+  justify-content: space-between;
+  display: flex;
+  flex: 1;
+}
+
+.todo-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.todo-list {
+  min-width: 30%;
+  list-style: none;
+  padding: 0;
+}
+
+.todo li {
+  flex: 1;
+}
+
+.trash-btn,
+.complete-btn {
+  background: #fff;
+  color: rgba(1, 152, 185, 0.836);
+  border: none;
+  padding: 1rem;
+  cursor: pointer;
+  font-size: 1rem;
+  border: 1px solid;
+}
+
+.todo-item {
+  padding: 0rem 0.5rem;
+}
+
+.fa-trash,
+.fa-check {
+  pointer-events: none;
+}
+
+.finished {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 0.8rem;
+  font-size: 1.7rem;
+  background: rgba(1, 152, 185, 0.836);
+  color: #fff;
+}
+
+.todo-dashboard {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+}
+
+.todo-item {
+  margin: 0.5rem;
+  background: rgba(1, 152, 185, 0.836);
+  font-size: 1.5rem;
+  color: rgb(255, 255, 255);
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  transition: all 1s ease;
+}
+
+.fin-li {
+  list-style: none;
+  padding: 0;
+}
