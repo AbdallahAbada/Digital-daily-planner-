@@ -13,10 +13,18 @@ body {
   height: 13vh;
   display: flex;
   flex-direction: row;
+  gap: 20px;
   background: rgba(1, 152, 185, 0.836);
   color: #fff;
   justify-content: center;
   align-items: center;
+}
+
+#clock {
+  font-size: 2.5rem;
+  background: #fff;
+  color: rgba(1, 152, 185, 0.836);
+  padding: 3px 10px;
 }
 
 .head {
