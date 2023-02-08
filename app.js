@@ -176,6 +176,22 @@ function showTime() {
     digiClock.textContent = currentTime
 }
 
+// FETCHING QUETES 
+let quotes = document.querySelector('.quotes')
+let author = document.querySelector('.author')
+fetch("https://type.fit/api/quotes")
+    .then(function (response) {
+        return response.json();
+    })
+    .then(function (data) {
+        console.log(data);
+        let random = Math.floor(Math.random() * 1643)
+        let quote = data[random].text
+        quotes.textContent = `"${quote}"`;
+        // author.textContent = 'Abdallah Abada'
+        author.textContent = data[random].author;
+    });
+
 
 
 
